@@ -1,0 +1,129 @@
+/* main page styling */
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  justify-content: center;
+  background-color: #e9f5f8;
+  color: rgb(10, 0, 6);
+  margin: 0 auto;
+}
+
+/* traffic light frame colour */
+.trafficLightFrame {
+  background-color: #dadada;
+  padding: 20px;
+  border-radius: 30px;
+  border: 10px solid white;
+}
+
+/* red light styling and animations */
+.redlight {
+  display: flex;
+  border: 7px solid black;
+  background-color: pink;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation-name: red_light;
+  animation-duration: 3s;
+}
+
+.redlight:hover {
+  background: red;
+}
+
+@keyframes red_light {
+  from {
+    background-color: pink;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+/* amber light styling and animations */
+.amberlight {
+  display: flex;
+  border: 7px solid black;
+  background-color: #fde8af;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation-name: amber_light;
+  animation-delay: 2s;
+  animation-duration: 1s;
+}
+
+.amberlight:hover {
+  background: #fab801;
+}
+
+@keyframes amber_light {
+  from {
+    background-color: #fde8af;
+  }
+  to {
+    background-color: #fab801;
+  }
+}
+
+/* green light styling and animations */
+.greenlight {
+  display: flex;
+  border: 7px solid black;
+  background-color: #def1de;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation-name: green_light;
+  animation-duration: 2s;
+  animation-delay: 3s;
+}
+
+.greenlight:hover {
+  background: #01b601;
+}
+
+@keyframes green_light {
+  from {
+    background-color: #def1de;
+  }
+  to {
+    background-color: #01b601;
+  }
+}
+
+/* links at bottom of page */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+a {
+  font-size: 11px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1d063a;
+}
