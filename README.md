@@ -6,4 +6,6 @@ A basic animation runs when the page loads to go through the red, amber, green s
 
 The page background will change colour when you hover on any of the lights. 
 
+Purpose: I think I will just this on my phone to answer my wife when she asks me if I want a cuppa.
+
 Demo: https://endacrossan.com/trafficLights/index.html
